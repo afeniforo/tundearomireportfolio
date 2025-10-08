@@ -4620,7 +4620,6 @@ input, select, textarea {
 			right: 0;
 			text-align: right;
 			top: 0;
-			vertical-align: middle;
 			width: 7rem;
 		}
 
@@ -4687,3 +4686,28 @@ input, select, textarea {
 		}
 
 	}
+
+	.dashboard-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+.dashboard-scroll img {
+  flex: 0 0 auto;
+  width: 350px; /* adjust width as needed */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.dashboard-scroll img:hover {
+  transform: scale(1.05);
+}
+
+/* Hide scrollbar for a cleaner look (optional) */
+.dashboard-scroll::-webkit-scrollbar {
+  display: none;
+}
