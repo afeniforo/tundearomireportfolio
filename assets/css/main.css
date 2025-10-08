@@ -4711,3 +4711,31 @@ input, select, textarea {
 .dashboard-scroll::-webkit-scrollbar {
   display: none;
 }
+.dashboard-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+.dashboard-scroll img {
+  flex: 0 0 auto;
+  width: 350px; /* adjust width if needed */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.dashboard-scroll img:hover {
+  transform: scale(1.05);
+}
+
+.dashboard-scroll::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 768px) {
+  .dashboard-scroll img {
+    width: 250px;
+  }
+}
